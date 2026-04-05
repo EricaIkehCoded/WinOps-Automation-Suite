@@ -21,5 +21,13 @@ foreach ($folder in $folders) {
 #Creating a Single folder
 New-Item -ItemType Directory -Name "_Notes"
 
+
 #Creating a file to save the code in
 New-Item -ItemType File -Path "_Notes/folder-structure-snippet.ps1"
+New-Item -ItemType File -Path "_Notes/git-commands-refrence.ps1"
+
+
+#Adding files to each folder in the structure
+Get-ChildItem -Directory | Where-Object { $_.Name -ne "-Notes"} | ForEach-Object {
+    New-Item -ItemType File -Path "$($_.Name)/README.md" -Value "# $($_.Name) 'n'nComing soon."
+}
