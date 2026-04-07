@@ -45,4 +45,6 @@ Get-Command *os*
 Get-ComputerInfo | Select-Object -Property OSName, OSVersion, CSName, CsUserName, OsUptime, CSNumberOfLogicalProcessors, CsTotalPhysicalMemory 
 
 
-Get-ComputerInfo | Select-Object -Property OSName, OSVersion, CSName, CsUserName, OsUptime, CSNumberOfLogicalProcessors, CsTotalPhysicalMemory | Out-File -Path C:\ClassFiles-EWI\WinOps-Automation-Suite\01_Local_Admin\SystemInventory_<ComputerName>_<Date>.txt
+Get-ComputerInfo | Select-Object -Property OSName, OSVersion, CSName, CsUserName, OsUptime, CSNumberOfLogicalProcessors, CsTotalPhysicalMemory | Out-File -FilePath C:\ClassFiles-EWI\WinOps-Automation-Suite\01_Local_Admin\SystemInventory_ComputerName_Date.txt
+
+Get-Help out-file -Online
