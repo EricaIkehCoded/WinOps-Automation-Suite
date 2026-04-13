@@ -48,3 +48,26 @@ Get-ComputerInfo | Select-Object -Property OSName, OSVersion, CSName, CsUserName
 Get-ComputerInfo | Select-Object -Property OSName, OSVersion, CSName, CsUserName, OsUptime, CSNumberOfLogicalProcessors, CsTotalPhysicalMemory | Out-File -FilePath C:\ClassFiles-EWI\WinOps-Automation-Suite\01_Local_Admin\SystemInventory_ComputerName_Date.txt
 
 Get-Help out-file -Online
+
+Get-Help Tee-Object -Online
+
+
+Get-Help math
+
+#Total memory in bytes divided ??? by = GB
+
+Get-Help memory
+Get-ComputerInfo | Get-Member | Select-Object -Property Name, Definition | Out-GridView
+(Get-ComputerInfo).CsTotalPhysicalMemory
+Get-Help [Math]::Round
+[Math]::Round(
+        (Get-ComputerInfo).CsTotalPhysicalMemory / 1073741824,  # take this number (memory in GB)
+            2                                                        # and round it to 2 decimal places
+            )
+
+
+[Math]::Round((Get-ComputerInfo).CsTotalPhysicalMemory / 1073741824, 2)
+
+# The problem - $SystemInfo is an object, 
+# accessing memory this way may return null
+[Math]::Round(($SystemInfo).CsTotalPhysicalMemory / 1073741824, 2)

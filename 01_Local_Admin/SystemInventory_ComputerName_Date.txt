@@ -3,7 +3,7 @@ OsName                      : Microsoft Windows 10 Enterprise
 OsVersion                   : 10.0.19043
 CsName                      : LON-CL1
 CsUserName                  : ADATUM\Administrator
-OsUptime                    : 12:49:51.5816641
+OsUptime                    : 00:14:13.3513698
 CsNumberOfLogicalProcessors : 4
 CsTotalPhysicalMemory       : 4294496256
 

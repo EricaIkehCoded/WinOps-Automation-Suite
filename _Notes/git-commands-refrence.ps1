@@ -51,3 +51,16 @@ git log --oneline
 
 # See what changed in a file before staging
 git diff
+
+# Start of each new phase
+git checkout -b phase2-dev
+
+# Work, test, commit as normal
+git add .
+git commit -m "Phase 2: description of what you did"
+git push origin phase2-dev
+
+# When phase is complete and reviewed by Claude
+git checkout main
+git merge phase2-dev
+git push origin main
