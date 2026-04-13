@@ -64,3 +64,11 @@ git push origin phase2-dev
 git checkout main
 git merge phase2-dev
 git push origin main
+
+#Adding .gitignore file to exclude certain files/folders from being tracked by Git
+New-Item -ItemType File -Name ".gitignore"
+
+# When Git opens the Vim merge message editor
+# Type this to save and exit:
+:wq
+# Then press Enter
