@@ -76,3 +76,17 @@ portfolio demonstrating hands-on technical skills.
 ---
 
 *Project in active development — phases added as coursework progresses.*
+
+## 📊 Project Progress
+
+| Phase | Topic | Status |
+|---|---|---|
+| 1 | Local Admin & Cmdlets | ✅ Complete |
+| 2 | Pipeline Tools | 🔄 In Progress |
+| 3 | PSProviders & PSDrives | ⏳ Upcoming |
+| 4 | WMI & CIM | ⏳ Upcoming |
+| 5 | Scripting | ⏳ Upcoming |
+| 6 | Remoting | ⏳ Upcoming |
+| 7 | Azure Management | ⏳ Upcoming |
+| 8 | M365 Management | ⏳ Upcoming |
+| 9 | Background & Scheduled Jobs | ⏳ Upcoming |
