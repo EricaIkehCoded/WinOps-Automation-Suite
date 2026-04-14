@@ -73,7 +73,10 @@ New-Item -ItemType File -Name ".gitignore"
 :wq
 # Then press Enter
 
-# --- REPO RECOVERY (use when Git Desktop loses the repo) ---
+# --- REPO RECOVERY ---
+# Use this when GitHub Desktop loses the repo connection,
+# or when git commands return "not a git repository" error.
+# Last used: 2026-04-14 after merge conflict on Windows lab
 
 # Step 1 - Verify the folder exists
 Test-Path "C:\ClassFiles-EWI\WinOps-Automation-Suite"
