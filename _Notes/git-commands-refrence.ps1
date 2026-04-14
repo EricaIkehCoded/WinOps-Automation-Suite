@@ -72,3 +72,32 @@ New-Item -ItemType File -Name ".gitignore"
 # Type this to save and exit:
 :wq
 # Then press Enter
+
+# --- REPO RECOVERY (use when Git Desktop loses the repo) ---
+
+# Step 1 - Verify the folder exists
+Test-Path "C:\ClassFiles-EWI\WinOps-Automation-Suite"
+
+# Step 2 - Delete corrupted .git folder
+Remove-Item -Recurse -Force "C:\ClassFiles-EWI\WinOps-Automation-Suite\.git"
+
+# Step 3 - Reinitialize with correct branch name (main)
+git init -b main
+
+# Step 4 - Stage and commit all local files
+git add .
+git commit -m "Restore repo"
+
+# Step 5 - Re-add the remote (skip if error says already exists)
+git remote add origin https://github.com/EricaIkehCoded/WinOps-Automation-Suite.git
+
+# Step 6 - Pull from GitHub first if remote has existing commits
+git pull origin main --allow-unrelated-histories
+
+# Step 7 - If merge conflicts, accept GitHub's version for everything
+git checkout --theirs .
+git add .
+git commit -m "Merge with remote"
+
+# Step 8 - Push to GitHub
+git push -u origin main
