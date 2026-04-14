@@ -51,3 +51,24 @@ git log --oneline
 
 # See what changed in a file before staging
 git diff
+
+# Start of each new phase
+git checkout -b phase2-dev
+
+# Work, test, commit as normal
+git add .
+git commit -m "Phase 2: description of what you did"
+git push origin phase2-dev
+
+# When phase is complete and reviewed by Claude
+git checkout main
+git merge phase2-dev
+git push origin main
+
+#Adding .gitignore file to exclude certain files/folders from being tracked by Git
+New-Item -ItemType File -Name ".gitignore"
+
+# When Git opens the Vim merge message editor
+# Type this to save and exit:
+:wq
+# Then press Enter
