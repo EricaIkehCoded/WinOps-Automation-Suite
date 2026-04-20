@@ -1,4 +1,20 @@
-#This script is used to gather system inventory information for the local machine. It collects various details about the operating system, hardware, and other relevant information that can be useful for troubleshooting, documentation, or inventory management purposes.
+<#
+.SYNOPSIS
+    Collects and exports system inventory information for the local machine.
+    
+.DESCRIPTION
+    This script gathers key system information for Contoso Federal Solutions including OS details, hardware specs, uptime, and memory. Results are displayed to the screen and exported to a timestamped text file. Built as part of the WinOps Automation Suite portfolio project.
+                    
+.EXAMPLE
+    .\Get-SystemInventory.ps1
+    Displays system inventory and creates SystemInventory_<ComputerName>_<Date>.txt
+                            
+.NOTES
+    Author: EricaIkedCoded
+    Date: 2026-04-13
+    Course: AZ-040T00 (Independent Project)
+    Phase: 1 - Local Admin & Cmdlets
+#>
 
 #Variables
 $ComputerName = $env:COMPUTERNAME
