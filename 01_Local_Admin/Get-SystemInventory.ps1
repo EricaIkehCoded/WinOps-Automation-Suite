@@ -10,7 +10,7 @@
     Displays system inventory and creates SystemInventory_<ComputerName>_<Date>.txt
                             
 .NOTES
-    Author: EricaIkedCoded
+    Author: EricaIkehCoded
     Date: 2026-04-13
     Course: AZ-040T00 (Independent Project)
     Phase: 1 - Local Admin & Cmdlets
