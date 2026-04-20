@@ -83,8 +83,8 @@ portfolio demonstrating hands-on technical skills.
 |---|---|---|
 | 1 | Local Admin & Cmdlets | ✅ Complete |
 | 2 | Pipeline Tools | ✅ In Progress |
-| 3 | PSProviders & PSDrives | 🔄 Upcoming |
-| 4 | WMI & CIM | ⏳ Upcoming |
+| 3 | PSProviders & PSDrives | ✅ Upcoming |
+| 4 | WMI & CIM | 🔄 Upcoming |
 | 5 | Scripting | ⏳ Upcoming |
 | 6 | Remoting | ⏳ Upcoming |
 | 7 | Azure Management | ⏳ Upcoming |
