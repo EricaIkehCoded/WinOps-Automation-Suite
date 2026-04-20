@@ -82,8 +82,8 @@ portfolio demonstrating hands-on technical skills.
 | Phase | Topic | Status |
 |---|---|---|
 | 1 | Local Admin & Cmdlets | ✅ Complete |
-| 2 | Pipeline Tools | 🔄 In Progress |
-| 3 | PSProviders & PSDrives | ⏳ Upcoming |
+| 2 | Pipeline Tools | ✅ In Progress |
+| 3 | PSProviders & PSDrives | 🔄 Upcoming |
 | 4 | WMI & CIM | ⏳ Upcoming |
 | 5 | Scripting | ⏳ Upcoming |
 | 6 | Remoting | ⏳ Upcoming |
