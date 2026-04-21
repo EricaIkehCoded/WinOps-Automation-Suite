@@ -82,10 +82,10 @@ portfolio demonstrating hands-on technical skills.
 | Phase | Topic | Status |
 |---|---|---|
 | 1 | Local Admin & Cmdlets | ✅ Complete |
-| 2 | Pipeline Tools | ✅ In Progress |
-| 3 | PSProviders & PSDrives | ✅ Upcoming |
-| 4 | WMI & CIM | 🔄 Upcoming |
-| 5 | Scripting | ⏳ Upcoming |
+| 2 | Pipeline Tools | ✅ Complete |
+| 3 | PSProviders & PSDrives | ✅ Complete |
+| 4 | WMI & CIM | ✅ Complete |
+| 5 | Scripting | 🔄 In Progress |
 | 6 | Remoting | ⏳ Upcoming |
 | 7 | Azure Management | ⏳ Upcoming |
 | 8 | M365 Management | ⏳ Upcoming |
