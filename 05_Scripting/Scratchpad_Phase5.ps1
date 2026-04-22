@@ -61,3 +61,108 @@ Must use if/elseif/else for department logic
 Must use string formatting to build personalized messages
 Must use Get-Random for ticket number generation
 Individual reports must be separate files per person
+
+#Key Concepts to Explore
+
+
+# Hash table syntax
+$person = @{
+        FirstName = "John"
+        LastName  = "Smith"
+}
+
+# Accessing hash table values
+$person.FirstName
+$person["FirstName"]
+
+# Array of hash tables
+$people = @(
+     @{ FirstName = "John"; LastName = "Smith" },
+     @{ FirstName = "Jane"; LastName = "Doe" }
+)
+
+# Foreach loop
+foreach ($person in $people) {
+    Write-Host $person.FirstName
+}
+
+# If/ElseIf/Else
+if ($person.Department -eq "IT") {
+    $building = "Building A"
+} elseif ($person.Department -eq "HR") {
+    $building = "Building B"
+} else {
+    $building = "Building D"
+}
+
+#Start of scratchpad
+
+Get-help about_Arrays -ShowWindow
+
+$Date = Get-Date -format "MM-dd-yyyy"
+
+#Get-Help Get-Date -Online
+<#
+$NewUsers = @{
+    FirstName = "Abby", "Brendan", "Cody", "Darlene"
+    LastName = "Andrews", "Barns", "Clark", "Davis"
+    Department = "IT", "HR", "Finance", "Communications"
+    JobTitle = "IT Analyst", "HR Analyst", "Finance Analyst", "Communications Analyst"
+    StartDate = $Date, $Date, "04-21-2026", "04-19-2026"
+}
+#>
+
+$NewUsers = @(
+     @{ FirstName = "Abby"; LastName = "Andrews"; Department = "IT"; JobTitle = "IT Analyst"; StartDate = $Date},
+     @{ FirstName = "Brendan"; LastName = "Barns"; Department = "HR"; JobTitle = "HR Analyst"; StartDate = $Date},
+     @{ FirstName = "Cody"; LastName = "Clark"; Department = "Finance"; JobTitle = "Finance Analyst"; StartDate = "04-21-2026"},
+     @{ FirstName = "Darlene"; LastName = "Davis"; Department = "Commnunications"; JobTitle = "Communications Analyst"; StartDate = $Date}
+)
+
+$NewUsers
+
+$NewUsers.FirstName
+$NewUsers.LastName
+$NewUsers.Department
+$NewUsers.JobTitle
+$NewUsers.StartDate
+
+$NewUsers["FirstName"]
+
+#Need an Array of HashTables
+
+$Date = Get-Date -format "MM-dd-yyyy"
+
+$NewUsers = @(
+     @{ 
+        FirstName = "Abby" 
+        LastName = "Andrews" 
+        Department = "IT" 
+        JobTitle = "IT Analyst" 
+        StartDate = $Date
+    },
+     @{ 
+        FirstName = "Brendan" 
+        LastName = "Barns" 
+        Department = "HR" 
+        JobTitle = "HR Analyst"
+        StartDate = $Date
+    },
+     @{ 
+        FirstName = "Cody" 
+        LastName = "Clark" 
+        Department = "Finance" 
+        JobTitle = "Finance Analyst" 
+        StartDate = "04-21-2026"
+    }
+     @{ 
+        FirstName = "Darlene"
+        LastName = "Davis"
+        Department = "Commnunications"
+        JobTitle = "Communications Analyst"
+        StartDate = 04-19-2026
+     }
+)
+
+$NewUsers
+$NewUsers.Abby
