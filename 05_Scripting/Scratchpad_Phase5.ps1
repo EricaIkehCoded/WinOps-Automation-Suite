@@ -160,9 +160,63 @@ $NewUsers = @(
         LastName = "Davis"
         Department = "Commnunications"
         JobTitle = "Communications Analyst"
-        StartDate = 04-19-2026
+        StartDate = "04-19-2026"
      }
 )
 
-$NewUsers
-$NewUsers.Abby
+
+
+ForEach ($NewUser in $NewUsers) {
+    if ($NewUser.Department -eq "IT") {
+        $Building = "Building A"; $EquipmentPackage = "Laptop, Docking Station, Security Badge, Admin Access"
+    } elseif ($NewUser.Department -eq "HR") {
+        $Building = "Building B"; $EquipmentPackage = "Laptop, Security Badge, HR System Access"
+    } elseif ($NewUser.Department -eq "Finance") { 
+        $Building = "Building C"; $EquipmentPackage = "Laptop, Security Badge, Finance System Access" 
+    } else {
+        $Building = "Building D"; $EquipmentPackage = "Laptop, Security Badge"
+    }
+
+    $TicketNumber = Get-Random -Minimum 10000 -Maximum 99999
+
+    Write-Host "Welcome $($NewUser.FirstName)! You are assigned to $($Building) and your equipment package includes: $($EquipmentPackage). Your ticket number is: $($TicketNumber)."
+
+    $ReportPath = ".Onboarding_$($NewUser.LastName)_$($NewUser.FirstName)_$FileDate.txt"
+
+    "=== Contoso Federal Solutions | Onboarding Report ===" | Out-File $ReportPath
+    "Name : $($NewUser.FirstName) $($NewUser.LastName)" | Out-File $ReportPath -Append
+    "Job Title : $($NewUser.JobTitle)" | Out-File $ReportPath -Append
+    "Department : $($NewUser.Department)" | Out-File $ReportPath -Append
+    "Start Date : $($NewUser.StartDate)" | Out-File $ReportPath -Append
+    "Building : $Building" | Out-File $ReportPath -Append
+    "Equipment: $EquipmentPackage" | Out-File $ReportPath -Append
+    "IT Ticket : $TicketNumber" | Out-File $ReportPath -Append
+
+
+}
+<#
+IT → Laptop, Docking Station, Security Badge, Admin Access
+HR → Laptop, Security Badge, HR System Access
+Finance → Laptop, Security Badge, Finance System Access
+All others → Laptop, Security Badge
+#>
+
+#Generate Ticket Numbder
+Get-Help Get-Random -Online
+Get-Random | Get-Member | Out-GridView
+Get-Random -Minimum 10000 -Maximum 99999
+ 
+#Master Summary
+
+Get-help ForEach-Object -Online
+Get-Help PSCustomObject 
+Get-Help System.Management.Automation.PSCustomObject
+Get-Help about_PSCustomObject -ShowWindow
+
+$NewUsers | ForEach-Object {
+    [PSCustomObject]@{
+        Name = "$($_.FirstName) $($_.LastName)"
+        Department = $_.Department
+        StartDate = $_.StartDate
+    }
+}  | Format-Table
