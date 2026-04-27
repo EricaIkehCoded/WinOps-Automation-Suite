@@ -1,15 +1,18 @@
 # Phase 3 — PSProviders & PSDrives ✅
 
-## script`Explore-RegistryDrive.ps1`
+## Script
+`Explore-RegistryDrive.ps1`
 
-## scenarioAs a Junior Systems Administrator at Contoso Federal Solutions,
+## Scenario
+As a Junior Systems Administrator at Contoso Federal Solutions,
 I was tasked with documenting the available storage providers and
 drives on local machines, and retrieving key OS information directly
 from the Windows Registry. This script automates that process by
 leveraging PowerShell's PSProvider and PSDrive system to navigate
 the registry like a file system and export a structured report.
 
-## What it does- Displays a company header with timestamp
+## What it does
+- Displays a company header with timestamp
 - Lists all available PSProviders on the system
 - Lists all current PSDrives on the system
 - Navigates to HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion
