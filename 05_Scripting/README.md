@@ -1,6 +1,7 @@
 # Phase 5 — Scripting & Logic ✅
 
-## Scripting`New-UserOnboardingReport.ps1`
+## Scripting
+`New-UserOnboardingReport.ps1`
 
 ## Scenario
 As a Junior Systems Administrator at Contoso Federal Solutions,
