@@ -1,9 +1,10 @@
 # Phase 1 — Local Admin & Cmdlets ✅
 
-## script
+## Script
 `Get-SystemInventory.ps1`
 
-## As a Junior Systems Administrator at Contoso Federal Solutions,
+## Scenario 
+As a Junior Systems Administrator at Contoso Federal Solutions,
 I was tasked with creating an automated system inventory tool
 to replace manual documentation. This script collects key
 system information and exports it to a timestamped report file.
