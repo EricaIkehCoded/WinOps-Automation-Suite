@@ -75,7 +75,21 @@ portfolio demonstrating hands-on technical skills.
 
 ---
 
+## 🤖 Development Approach
+
+This project was built independently as part of the MSSA program.
+Claude AI (Anthropic) was used as a learning assistant throughout
+development — helping explain concepts, review code, and provide
+guidance when stuck.
+
+All scripts were written, tested, and debugged by me. The AI
+assisted the learning process but did not generate the code.
+This mirrors how developers use documentation, Stack Overflow,
+and mentors in professional environments.
+
 *Project in active development — phases added as coursework progresses.*
+
+---
 
 ## 📊 Project Progress
 
@@ -85,8 +99,9 @@ portfolio demonstrating hands-on technical skills.
 | 2 | Pipeline Tools | ✅ Complete |
 | 3 | PSProviders & PSDrives | ✅ Complete |
 | 4 | WMI & CIM | ✅ Complete |
-| 5 | Scripting | 🔄 In Progress |
-| 6 | Remoting | ⏳ Upcoming |
+| 5 | Scripting | ✅ In Progress |
+| 6 | Remoting | 🔄 Upcoming |
 | 7 | Azure Management | ⏳ Upcoming |
 | 8 | M365 Management | ⏳ Upcoming |
 | 9 | Background & Scheduled Jobs | ⏳ Upcoming |
+
