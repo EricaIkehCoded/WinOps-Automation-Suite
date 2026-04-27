@@ -3,7 +3,7 @@
 ## script
 `Get-SystemInventory.ps1`
 
-## scenarioAs a Junior Systems Administrator at Contoso Federal Solutions,
+## As a Junior Systems Administrator at Contoso Federal Solutions,
 I was tasked with creating an automated system inventory tool
 to replace manual documentation. This script collects key
 system information and exports it to a timestamped report file.
